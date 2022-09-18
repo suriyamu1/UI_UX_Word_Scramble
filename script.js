@@ -18,7 +18,7 @@ refreshBtn.addEventListener('click', initializeGame);
 
 // When check button is called, the arrow function is executed
 checkBtn.addEventListener('click', () => {
-    let inputText = inputElement.value.toLocaleLowerCase();  
+    let inputText = inputElement.value.toLocaleLowerCase().trim();  
     //toLocalLowerCase() converts the original string and toLowerCase() does not modify the original string
     
     if(inputText === '') {
