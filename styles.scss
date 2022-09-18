@@ -31,7 +31,7 @@
             border-bottom: 3px solid #bbb;
 
             h2 {
-                width: 60%;
+                width: 100%;
                 font-size: 1.2rem;
                 color: #08008a;
             }
@@ -43,10 +43,10 @@
                 text-transform: uppercase;
                 text-align: center;
                 padding: 1rem 1rem;
-                letter-spacing: 20px;
+                letter-spacing: 1rem;
                 font-size: 1.5rem;
                 color: blue;
-                margin-left: 15px;
+                margin-left: 0.75rem;
             }
             h2 {
                 padding: 0rem 1rem;
@@ -70,6 +70,7 @@
                 border: 0px;
                 outline: none;
                 background-color: #eee;
+                font-size: 1rem;
             }
 
             input[type=text]:focus {
@@ -133,6 +134,27 @@
                 background-color: #08008a;
                 transition: 0.5s ease-in-out;
             }
+        }
+    }
+}
+
+@media screen and (max-width: 550px) {
+    * {
+        font-size: 15px;
+    }
+    body {
+        .main-container {
+            max-width: 100vh;
+
+            .container {
+                width: 70%;
+
+                .content {
+                    h1 {
+                        font-size: 1rem;
+                    }
+                }
+            } 
         }
     }
 }
